@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sage & Silk Inn </title>
+<meta name="description" content="Welcome to Sage & Silk Inn, a luxurious bed and breakfast!">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Sage & Silk Inn</h1>
+  </header>
+  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+  <ul id="navList">
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/willow_suite.html">The Willow Suite</a></li>
+	<li><a href="rooms/moonpetal_suite.html">The Moonpetal Suite</a></li>
+	<li><a href="events/weekend.html">Weekend Events</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+ <main>
+ <h2> Welcome to Sage & Silk Inn! </h2>
+ <p>Experience a serene, inviting bed and breakfast where elegance meets a silk-like comfort. We offer luxurious accomodations designed for your perfect escape."</p>
+ 
+ 
+ <h2>Our signature Suites</h2>
+ <p>Each of our carefully curated suites offers a unique ambiance and premium amenities to ensure an unforgettable stay. From the peaceful Willow Suite to the romantic Moonpetal Suite, you get to decide your perfect retreat!</p>
+ 
+ <h3>Why Choose Sage & Silk Inn?</h3>
+ <ul>
+	<li>Luxurious boutique accomodations</li>
+	<li>Personalized concierge service</li>
+	<li>Complimentary gourmet breakfast</li>
+	<li>Beautiful gardens and outdoor spaces</li>
+	<li>Special weekend events and packages</li>
+ </ul>
+ 
+ <img src="images/Sage&amp;SilkInn.png" alt="Exterior of Sage and Silk Inn" width="450" height="300">
+ 
+ <h3>Book Your Perfect Getaway</h3>
+ <p>Whether your're planning a romantic weekend, a peaceful retreat, or a special celebration, Sage & Silk Inn provides the perfect setting.<a href="contact.html"> Contact us </a>today to reserve your suite.</p>
+ 
+  
+  </main>
+  <footer>
+	Copyright &copy; 2025 Sage & Silk Inn<br>
+	<a href="mailto:ktbennett22@amarillocollege.com">Kaitlyn Bennett</a>
+  
+  </footer>
+</div>
+<script>
+function toggleMenu() {
+    var nav = document.getElementById('navList');
+    if (nav.className === 'show') {
+        nav.className = '';
+    } else {
+        nav.className = 'show';
+    }
+}
+</script>
+</body>
+</html>

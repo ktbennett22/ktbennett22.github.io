@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sage & Silk Inn: The Moonptetal Suite</title>
+<meta name="description" content="The Moonpetal Suite features a private balcony, and luxury amenities!">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../styles/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Sage & Silk Inn</h1>
+  </header>
+  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+  <ul id="navList"> 
+    <li><a href="../index.html">Home</a></li>
+	<li><a href="willow_suite.html">The Willow Suite</a></li>
+	<li><a href="moonpetal_suite.html">The Moonpetal Suite</a></li>
+	<li><a href="../events/weekend.html">Weekend Events</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+  <h3>The Moonpetal Suite</h3>
+  <img src="../images/moonpetal.png" alt="Moonpetal Suite Interior" width="350" height="350">
+  <p>"Indulge in romance and elegance within The Moonpetal Suite. This suite features rich silk lines, soft lighting, with warm and inviting decor that creates the coziest stay."</p>
+  <h3>Room Pricing</h3>
+  <ul>
+	<li>Sunday - Thursday: $229 per night</li>
+	<li>Friday- Saturday: $289 per night</li>
+  </ul>
+  
+  <h3>Suite Amenities</h3>
+  <ul>
+	<li>California King Bed</li>
+	<li>Cozy Sitting area for two</li>
+	<li>Private balcony with seating area overlooking the Garden</li>
+	<li>Complimentary Wi-fi</li>
+	<li>Mini Bar</li>
+	<li>Fresh Flowers upon arrival</li>
+  </ul>
+
+  
+  </main>
+  <footer>
+  Copyright &copy; 2025 Sage & Silk Inn<br>
+  <a href="mailto:ktbennett22@amarillocollege.com">Webmaster</a>
+  </footer>
+</div>
+<script>
+function toggleMenu() {
+var nav = document.getElementById('navList');
+if (nav.className === 'show') {
+	nav.className = '';
+	} else {
+		nav.className = 'show';
+	}
+}
+</script>
+</body>
+</html>

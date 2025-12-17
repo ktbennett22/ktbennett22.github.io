@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sage & Silk Inn - Contact & Reservations</title>
+<meta name="description" content="Contact Sage & Silk Inn for reservation inquiries!">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Sage & Silk Inn</h1>
+  </header>
+  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+  <ul id="navList">
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/willow_suite.html">The Willow Suite</a></li>
+	<li><a href="rooms/moonpetal_suite.html">The Moonpetal Suite</a></li>
+	<li><a href="events/weekend.html">Weekend Events</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+  <h2>Contact & Reservations</h2>
+  
+  <h3>Get in Touch</h3>
+  <p>"We'd love to hear from you! Whether you're ready to book your stay or have questions about our suites and services, our friendly staff is here to help."</p>
+  
+  <h3>Contact Information</h3>
+  <dl>
+    <dt>Address:</dt>
+    <dd>123 Serenity Lane<br>
+        Amarillo, TX 79101</dd>
+    <dt>Phone:</dt>
+    <dd>(806) 555-SILK (7455)</dd>
+    <dt>Email:</dt>
+    <dd><a href="mailto:reservations@sageandsilkinn.com">reservations@sageandsilkinn.com</a></dd>
+    <dt>Hours:</dt>
+    <dd>Front Desk: 24 hours<br>
+        Reservations: 8:00 AM - 8:00 PM Daily</dd>
+  </dl>
+  
+  <h3>Find Us</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.34061192427!2d-101.9076!3d35.2220!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870148d4b245cf03%3A0xd0f3d11c6836d2af!2sAmarillo%2C%20TX!5e0!3m2!1sen!2sus!4v1234567890" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+  <h3>Reservation Inquiry Form</h3>
+  <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <label for="name">Full Name:</label><br>
+    <input type="text" name="name" id="name" required><br><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" name="email" id="email" required><br><br>
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" name="phone" id="phone"><br><br>
+    
+    <label for="checkin">Check-in Date:</label><br>
+    <input type="date" name="checkin" id="checkin" required><br><br>
+    
+    <label for="checkout">Check-out Date:</label><br>
+    <input type="date" name="checkout" id="checkout" required><br><br>
+    
+    <label for="suite">Preferred Suite:</label><br>
+    <select name="suite" id="suite">
+      <option value="">-- Select a Suite --</option>
+      <option value="willow">The Willow Suite</option>
+      <option value="moonpetal">The Moonpetal Suite</option>
+    </select><br><br>
+    
+    <label for="guests">Number of Guests:</label><br>
+    <input type="number" name="guests" id="guests" min="1" max="2" value="2"><br><br>
+    
+    <label for="message">Special Requests or Questions:</label><br>
+    <textarea name="message" id="message" rows="5" cols="40"></textarea><br><br>
+    
+	<fieldset>
+  <legend>Preferred Contact Method:</legend>
+  <input type="radio" name="contact_method" id="contact_email" value="email" checked>
+  <label for="contact_email">Email</label><br>
+  <input type="radio" name="contact_method" id="contact_phone" value="phone">
+  <label for="contact_phone">Phone</label><br>
+  <input type="radio" name="contact_method" id="contact_either" value="either">
+  <label for="contact_either">Either</label>
+</fieldset>
+
+<fieldset>
+  <legend>Additional Services (Optional):</legend>
+  <input type="checkbox" name="breakfast" id="breakfast" value="yes">
+  <label for="breakfast">Gourmet Breakfast Upgrade</label><br>
+  <input type="checkbox" name="flowers" id="flowers" value="yes">
+  <label for="flowers">Fresh Flower Arrangement</label><br>
+  <input type="checkbox" name="wine" id="wine" value="yes">
+  <label for="wine">Complimentary Wine</label><br>
+  <input type="checkbox" name="spa" id="spa" value="yes">
+  <label for="spa">Spa Package</label>
+</fieldset>
+
+<input type="submit" value="Submit Inquiry">
+	
+   
+  </form>
+  
+  <h3>Cancellation Policy</h3>
+  <p>Free cancellation up to 48 hours before check-in. Cancellations within 48 hours will be charged one night's stay.</p>
+  
+  </main>
+  <footer>
+  Copyright &copy; 2025 Sage & Silk Inn<br>
+  <a href="mailto:ktbennett22@amarillocollege.com">Kaitlyn Bennett</a>
+  </footer>
+</div>
+<script>
+function toggleMenu() {
+    var nav = document.getElementById('navList');
+    if (nav.className === 'show') {
+        nav.className = '';
+    } else {
+        nav.className = 'show';
+    }
+}
+</script>
+</body>
+</html>
